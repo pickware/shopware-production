@@ -4,10 +4,7 @@
     "type": "project",
     "require": {
         "composer-runtime-api": "^2.0",
-        "shopware/administration": "*",
-        "shopware/core": "~v6.6.0",
-        "shopware/elasticsearch": "*",
-        "shopware/storefront": "*",
+        "shopware/shopware": "dev-trunk",
         "symfony/flex": "~2"
     },
     "repositories": [
@@ -49,8 +46,9 @@
         "sort-packages": true
     },
     "scripts": {
-        "auto-scripts": [
-        ],
+        "auto-scripts": {
+            "assets:install": "symfony-cmd"
+        },
         "post-install-cmd": [
             "@auto-scripts"
         ],
