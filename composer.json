@@ -4,7 +4,7 @@
     "type": "project",
     "require": {
         "composer-runtime-api": "^2.0",
-        "shopware/shopware": "6.7.x-dev",
+        "shopware/platform": "6.7.x-dev",
         "symfony/flex": "~2"
     },
     "repositories": [
